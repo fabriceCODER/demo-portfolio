@@ -1,11 +1,10 @@
-
 import ContactForm from "@/components/ContactForm";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
 
 const Contact = () => {
   return (
     <main className="pt-24">
-      <section className="section-padding bg-harper-cream">
+      <section className="section-padding bg-gradient-to-b from-harper-cream to-white">
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h1 className="text-4xl sm:text-5xl font-bold text-harper-navy mb-6 animate-fade-in">
@@ -15,76 +14,78 @@ const Contact = () => {
               Have a project in mind? I'd love to hear from you. Get in touch and let's create something amazing.
             </p>
           </div>
-          
+
           <div className="flex flex-col lg:flex-row gap-12">
             {/* Contact Information */}
             <div className="lg:w-1/3">
-              <div className="bg-white p-8 rounded-lg shadow-md h-full">
+              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg h-full border border-gray-100">
                 <h2 className="text-2xl font-bold text-harper-navy mb-6">Contact Information</h2>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-start">
                     <Mail size={20} className="text-harper-terracotta mt-1 mr-4" />
                     <div>
                       <h3 className="font-medium text-harper-navy">Email</h3>
-                      <a 
-                        href="mailto:alex.harper@example.com" 
+                      <a
+                        href="mailto:fabricecoder009@gmail.com"
                         className="text-gray-700 hover:text-harper-terracotta transition-colors"
                       >
-                        alex.harper@example.com
+                        fabricecoder009@gmail.com
                       </a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <Phone size={20} className="text-harper-terracotta mt-1 mr-4" />
                     <div>
                       <h3 className="font-medium text-harper-navy">Phone</h3>
-                      <a 
-                        href="tel:+14155552671" 
+                      <a
+                        href="tel:+254794500945"
                         className="text-gray-700 hover:text-harper-terracotta transition-colors"
                       >
-                        (415) 555-2671
+                        +254 794 500 945
                       </a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <MapPin size={20} className="text-harper-terracotta mt-1 mr-4" />
                     <div>
                       <h3 className="font-medium text-harper-navy">Location</h3>
-                      <p className="text-gray-700">San Francisco, California</p>
+                      <p className="text-gray-700">Nairobi, Kenya</p>
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="mt-10">
                   <h3 className="font-medium text-harper-navy mb-4">Connect</h3>
                   <div className="flex space-x-4">
-                    <a 
-                      href="#" 
-                      className="bg-harper-cream h-10 w-10 rounded-full flex items-center justify-center text-harper-navy hover:bg-harper-terracotta hover:text-white transition-colors"
+                    <a
+                      href="https://instagram.com/ishi-fab"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-harper-cream h-10 w-10 rounded-full flex items-center justify-center text-harper-navy hover:bg-harper-terracotta hover:text-white transition-all transform hover:-translate-y-0.5"
                       aria-label="Instagram"
                     >
                       <Instagram size={18} />
                     </a>
-                    <a 
-                      href="#" 
-                      className="bg-harper-cream h-10 w-10 rounded-full flex items-center justify-center text-harper-navy hover:bg-harper-terracotta hover:text-white transition-colors"
+                    <a
+                      href="#"
+                      className="bg-harper-cream h-10 w-10 rounded-full flex items-center justify-center text-harper-navy hover:bg-harper-terracotta hover:text-white transition-all transform hover:-translate-y-0.5"
                       aria-label="Twitter"
                     >
                       <Twitter size={18} />
                     </a>
-                    <a 
-                      href="#" 
-                      className="bg-harper-cream h-10 w-10 rounded-full flex items-center justify-center text-harper-navy hover:bg-harper-terracotta hover:text-white transition-colors"
+                    <a
+                      href="#"
+                      className="bg-harper-cream h-10 w-10 rounded-full flex items-center justify-center text-harper-navy hover:bg-harper-terracotta hover:text-white transition-all transform hover:-translate-y-0.5"
                       aria-label="LinkedIn"
                     >
                       <Linkedin size={18} />
                     </a>
-                    <a 
-                      href="#" 
-                      className="bg-harper-cream h-10 w-10 rounded-full flex items-center justify-center text-harper-navy hover:bg-harper-terracotta hover:text-white transition-colors"
+                    <a
+                      href="#"
+                      className="bg-harper-cream h-10 w-10 rounded-full flex items-center justify-center text-harper-navy hover:bg-harper-terracotta hover:text-white transition-all transform hover:-translate-y-0.5"
                       aria-label="Facebook"
                     >
                       <Facebook size={18} />
@@ -93,10 +94,10 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Contact Form */}
             <div className="lg:w-2/3">
-              <div className="bg-white p-8 rounded-lg shadow-md">
+              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-gray-100">
                 <h2 className="text-2xl font-bold text-harper-navy mb-6">Send Me a Message</h2>
                 <ContactForm />
               </div>
@@ -104,13 +105,13 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      
+
       {/* FAQ Section */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-gradient-to-b from-white to-harper-cream">
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold text-harper-navy mb-10 text-center">Frequently Asked Questions</h2>
-            
+
             <div className="space-y-6">
               {[
                 {
@@ -130,7 +131,7 @@ const Contact = () => {
                   answer: "To provide an accurate quote, I typically need to understand your project goals, timeline, scope of work, and any specific requirements or constraints. The more details you can share, the better I can tailor my services to your needs."
                 }
               ].map((faq, index) => (
-                <div key={index} className="border-b border-gray-200 pb-6">
+                <div key={index} className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-all">
                   <h3 className="text-xl font-semibold text-harper-navy mb-3">{faq.question}</h3>
                   <p className="text-gray-700">{faq.answer}</p>
                 </div>
@@ -139,16 +140,16 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Working Hours */}
-      <section className="section-padding bg-harper-cream">
+      <section className="section-padding bg-gradient-to-b from-harper-cream to-white">
         <div className="container mx-auto text-center max-w-2xl">
           <h2 className="text-3xl font-bold text-harper-navy mb-6">Working Hours</h2>
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-gray-100">
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4">
                 <h3 className="font-semibold text-harper-navy">Weekdays</h3>
-                <p className="text-gray-700">9:00 AM - 6:00 PM PST</p>
+                <p className="text-gray-700">9:00 AM - 6:00 PM EAT</p>
               </div>
               <div className="p-4">
                 <h3 className="font-semibold text-harper-navy">Weekends</h3>
